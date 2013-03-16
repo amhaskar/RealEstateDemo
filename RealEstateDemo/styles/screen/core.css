@@ -35,7 +35,11 @@ nav {
 }
 
 #main-menu {
-    margin-top: 6em;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    top: -3em;
 }
 
 #main {

@@ -61,7 +61,10 @@
     <Content Include="index2.html" />
     <Content Include="listings.html" />
     <Content Include="styles\base.css" />
-    <Content Include="styles\core.css" />
+    <Content Include="styles\handheld\core.css" />
+    <Content Include="styles\handheld\style.css" />
+    <Content Include="styles\screen\core.css" />
+    <Content Include="styles\screen\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
