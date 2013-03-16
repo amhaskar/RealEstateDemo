@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Some Company</title>
+    <link type="text/css" rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="http://bxslider.com/lib/jquery.bxslider.css" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Company Header goes here</h1>
+        </header>
+        <div id="thumbnail-carousel">
+            <ul>
+                <li><img src="" class="house-thumbnail" /></li>
+                <li><img src="" class="house-thumbnail" /></li>
+                <li><img src="" class="house-thumbnail" /></li>
+                <li><img src="" class="house-thumbnail" /></li>
+                <li><img src="" class="house-thumbnail" /></li>
+                <li><img src="" class="house-thumbnail" /></li>
+            </ul>
+        </div>
+        <div id="menu">
+            <ul>
+                <li class="button"><span class="button-icon" /><span class="button-text" name="search">Search</span></li>
+                <li class="button"><span class="button-icon" /><span class="button-text" name="listings">Our Listings</span></li>
+                <li class="button"><span class="button-icon" /><span class="button-text" name="team">Our Team</span></li>
+                <li class="button"><span class="button-icon" /><span class="button-text" name="contacts">Contact List</span></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#thumbnail-carousel ul').bxSlider({
+                infiniteLoop: false,
+                hideControlOnEnd: true,
+                maxSlides: 1,
+                minSlides: 1,
+                slideWidth: 400,
+                slideMargin: 10
+            });
+
+            $(".button").click(function () {
+                
+            });
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿body {
+    width: 100%;
+    font-family: Arial;
+}
+
+#container {
+    width: 600px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+/*
+#thumbnail-carousel {
+    background-color: lightblue;
+    overflow: hidden;
+    height: 160px;
+    padding: 5px auto;
+}
+
+#thumbnail-carousel ul {
+    margin: 0px auto;
+    padding: 0px;
+    list-style-type: none;
+}
+
+#thumbnail-carousel li {
+    float: left;
+    margin: 2px;
+
+}
+*/
+#thumbnail-carousel li img {
+    width: 512px;
+    height: 400px;
+    background-color: lightblue;
+}
+
+#house-teaser-gallery {
+    list-style-type: none;
+    margin: 0px auto;
+    padding: 0px;
+    width: 90%;
+}
+
+#house-teaser-gallery li {
+    width: 256px;
+    height: 200px;
+    float: left;
+    margin: 5px;
+}
+
+.house-teaser{ 
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+
+}
+
+.house-teaser-info {
+    position: relative;
+    left: 0;
+    top: -100;
+    font-size: smaller;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu .button {
+    margin: 2em;
+    padding: 2em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+    #menu .button:hover {
+        background-color: lightblue;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }

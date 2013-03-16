@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        header {
+            text-shadow: 0 1px #000;
+            background: #282828;
+            color: #fff;
+        }
+
+        /*
+        .clearfix:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+
+        .clearfix {
+            display: inline-block;
+        }
+
+        html[xmlns] .clearfix {
+            display: block;
+        }
+
+        * html .clearfix {
+            height: 1%;
+        }
+            */
+        #main {
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            font-size: small;
+        }
+
+        .content-container {
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            width: 100%;
+        }
+
+        br {
+            clear: left;
+        }
+
+        nav {
+            text-align: right;
+            background-color: #000;
+        }
+
+        #userbar {
+            font-size: smaller;
+        }
+
+        #main-menu {
+            background-color: transparent;
+            font-size: large;
+        }
+
+        nav li {
+            margin: .2em .5em;
+            display: inline-block;
+        }
+
+        nav a {
+            display: block;
+            padding: .5em .2em;
+            text-align: center;
+            color: #fff; 
+            text-decoration: none;
+            border: 1px solid transparent;
+        }
+
+        nav a:hover {
+            color: #808080;
+        }
+
+        #featured-listing {
+            margin: 0 auto;
+            padding: 0;
+            width: 800px;
+        }
+
+        #featured-listing li {
+            margin: 0 auto;
+            padding: 0;
+            width: 512px;
+            height: 400px;
+            display: inline-block;
+            background-color: black;
+            position: relative;
+        }
+
+        #featured-listing a {
+            display: block;
+            height: 100%;
+            background: url(http://www.saizproperties.com/Images/house05.jpg) no-repeat;
+        }
+        
+        .listing-info {
+            background-color: #282828;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            opacity: 0.9;
+            font-size: small;
+        }
+
+        .listing-info div {
+            display: inline-block;
+            width: 254px;
+        }
+
+        .listing-info div:first-child {
+            width: 254px;
+            /*border-right: 1px solid white;*/
+        }
+
+        .listing-info span {
+            display: block;
+            padding: .3em;
+        }
+
+    </style>
+    <link rel="stylesheet" href="styles/core.css" type="text/css" />
+    <link rel="stylesheet" href="http://bxslider.com/lib/jquery.bxslider.css" type="text/css" />
+
+</head>
+<body>
+    <header>
+        <div class="content-container">
+            <nav id="userbar">
+                <ul>
+                    <li>Welcome <span class="username">Guest</span></li>
+                    <li><a href="javascript:void(0);">Login</a></li>
+                    <li><a href="javascript:void(0);">Sign up</a></li>
+                </ul>
+            </nav>
+            <h1>Company Name</h1>
+            <nav id="main-menu">
+                <ul>
+                    <li><a href="javascript:void(0);" class="link-search">Search</a></li>
+                    <li><a href="javascript:void(0);" class="link-listings">Our Listings</a></li>
+                    <li><a href="javascript:void(0);" class="link-team">Our Team</a></li>
+                    <li><a href="javascript:void(0);" class="link-contact">Contact List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="main" class="clearfix">
+        
+        <div class="content-container">
+            <ul id="featured-listing">
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="listing-info clearfix">
+                            <div>
+                                <span class="address">242 Lansing St.</span>
+                                <span class="price">$400,000</span>
+                                <span class="mls">#3453455344</span>
+                            </div>
+                            <div>
+                                <span class="brokerage">List</span>
+                                <span class="agent">Nick Dewitt</span>
+                                <span class="agent-phone">(614) 555-5555</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="listing-info clearfix">
+                            <div>
+                                <span class="address">242 Lansing St.</span>
+                                <span class="price">$400,000</span>
+                                <span class="mls">#3453455344</span>
+                            </div>
+                            <div>
+                                <span class="brokerage">List</span>
+                                <span class="agent">Nick Dewitt</span>
+                                <span class="agent-phone">(614) 555-5555</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; MyRealEstateListings.com
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#featured-listing').bxSlider({
+                infiniteLoop: false,
+                hideControlOnEnd: true,
+                maxSlides: 1,
+                minSlides: 1,
+                slideWidth: 512,
+                slideMargin: 10
+            });
+        });
+    </script>
+</body>
+</html>
